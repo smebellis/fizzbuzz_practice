@@ -3,17 +3,24 @@
 
 int main()
 {
-    for (int i = 0; i <= 100; i++)
+    for (int i = 1; i <= 100; i++)
     {
         if (i % 3 == 0)
         {
             printf("fizz\n");
         }
-        if (i % 5 == 0)
+        else if (i % 5 == 0)
         {
             printf("buzz\n");
         }
-        printf("%d \n", i);
+        else if (i % 3 == 0 && i % 5 == 0)
+        {
+            printf("fizzbuzz\n");
+        }
+        else
+        {
+            printf("%d \n", i);
+        }
     }
 
     return 0;
