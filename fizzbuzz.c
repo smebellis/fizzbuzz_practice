@@ -9,6 +9,10 @@ int main()
         {
             printf("fizz\n");
         }
+        if (i % 5 == 0)
+        {
+            printf("buzz\n");
+        }
         printf("%d \n", i);
     }
 
